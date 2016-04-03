@@ -286,6 +286,7 @@ void Sudoku::change(){
 	flip(rand()%2);
 }
 void Sudoku::printOut(){
+	cout<<endl;
 	for(int i=0;i<sudokuSize;i++){
 		cout<<map[i]<<" ";
 		if(i%9==8)
@@ -293,7 +294,7 @@ void Sudoku::printOut(){
 	}
 }
 void Sudoku::transform(){
-	readIn();
+	//readIn();
 	change();
 	printOut();
 }
