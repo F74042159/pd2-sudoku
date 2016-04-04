@@ -27,7 +27,7 @@ class Sudoku{
     private:
 		int map[sudokuSize];
 		int copyMap[sudokuSize];
-		int record[sudokuSize];//紀錄上次是填的Index
+		int record[82];//紀錄上次是填的Index(82:for 全都0的題目)
 		int firstAnswer[sudokuSize];//存第一組解
 		int times;
 		bool checkUnity(int arr[]);
